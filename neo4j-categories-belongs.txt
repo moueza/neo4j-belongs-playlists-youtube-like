@@ -1,0 +1,9 @@
+match(m)-[r]->(n)delete(r);
+match(m)delete(m);
+
+
+create (jokoTennisVSNadal:Sport:Tennis:Seen:Favorites{name:'',idd:'jokoNadal', type:'videoYT'});
+create (richeEtCelebre:Argent:Seen:Favorites{name:'',idd:'richCelebr', type:'videoYT'});
+match(m:Argent) return m;
+match(m:Seen) return m;
+match(m:Favorites:Seen) return m;
